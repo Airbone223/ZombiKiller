@@ -1,0 +1,202 @@
+body {
+    background: rgb(199,223,187);
+    /* background: linear-gradient(90deg, rgba(199,223,187,1) 1%, rgba(199,223,187,1) 100%, rgba(103,249,70,1) 100%, rgba(222,217,214,1) 100%, rgba(2,0,36,1) 100%); */
+    background: linear-gradient(to right, rgba(210,255,82,1) 0%, rgba(145,232,66,1) 100%);
+}
+
+.gamefield {
+    border-radius: 20px;
+    border: 2px solid lightslategray;
+    
+    
+}
+
+.gamecontainer {
+    
+    display:flex;
+    padding-left:240px
+}
+
+.gameinfo {
+    border: 2px solid lightslategray;
+    border-radius: 20px;
+    margin-left: 15px;
+    width:220px;
+    text-align: center;
+    background: url("images/info.png");
+    background-size: cover;
+}
+
+.field {
+   
+    position: absolute;
+    top:170px;
+    width:750px;
+    height: 540px;
+}
+
+.person {
+    cursor: pointer;
+    position: absolute;
+    width:120px;
+    top:35px;
+    left: 550px;
+    animation: transform 1s linear 0s infinite;
+}
+
+
+.start {
+    top: 300px;
+    left :240px;
+}
+.difficult {
+width: 600px;
+left: 65px;
+position: absolute;
+ padding:5px;
+}
+.easy {
+top:160px;
+left:40px;
+}
+.hard {
+    top:160px;
+    left:420px;
+}
+.choosen {
+    transform: scale(1.1);
+    border-radius: 20px;
+    border: 4px solid green;
+    background:url('images/info.png');
+
+}
+.common {
+    position: absolute;
+ padding:5px;
+ cursor: pointer;
+}
+.common:hover {
+    transform: scale(1.1);
+    border-radius: 20px;
+    border: 3px solid green;
+}
+
+.infoDifficult {
+    position: absolute;
+    top: 100px;
+    left:1015px;
+    height: 55px;
+    width: 230px;
+}
+.difficultType {
+    position: absolute;
+    top: 180px;
+    left:1070px;
+    width:120px;
+   
+}
+
+.zombCounter {
+position: absolute;
+top: 430px;
+left: 1085px;
+
+color: rgb(39, 56, 40);
+font-size: 50px;
+padding: 5px;
+border-radius: 20px;
+font-weight: 900;
+border: 3px solid rgb(39, 56, 40);
+width:80px;
+}
+
+
+
+.zombsLeft {
+    position: absolute;
+    top: 300px;
+    left:1030px;
+    width:200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.rotate {
+    animation-name: rotation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes transform {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+      }
+  }
+
+  @keyframes rotation {
+    0% {
+        
+        transform:rotate(0deg);
+    }
+    100% {
+        transform: translateY(25px) rotate(90deg);
+      
+    }
+}
+
+
+.dead {
+    position: absolute;
+    top: 100px;
+    left:210px;
+    height:120px;
+}
+
+
+.win {
+    top: 50px;
+    left:170px;
+    position: absolute;
+}
+
+
+
+.zomb1 {
+    background-image: url("images/zomb1.png");
+}
+.zomb2 {
+    background-image: url("images/zomb2.png");
+}
+.zomb3 {
+    background-image: url("images/zomb3.png");
+}
+.zomb4 {
+
+    background-image: url("images/zomb4.png");
+}
+.zomb5 {
+    
+    background-image: url("images/zomb5.png");
+}
+
+.blud {
+    transition: 0.5s;
+    background: url("images/blud.png");
+    background-size: cover;
+}
+
+.zombies {
+    background-size: cover;
+    animation: transform 1s linear 0s infinite;
+   cursor: pointer;
+}
